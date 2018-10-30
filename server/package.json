@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-async-handler": "^1.1.4",
     "grunt": "^1.0.3",
