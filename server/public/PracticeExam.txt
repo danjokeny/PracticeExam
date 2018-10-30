@@ -1,9 +1,0 @@
-//BusAdm 810 -  Web App Dev
-//Daniel Forero
-//Practice Exam
-
-//GitHub Repository
-
-
-https://github.com/danjokeny/PracticeExam
-

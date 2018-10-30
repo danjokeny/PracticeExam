@@ -1,0 +1,20 @@
+//BusAdm 810 -  Web App Dev
+//Daniel Forero
+//Practice Exam
+
+
+/*
+Professor, 
+if no one else is asking to grade todays exam as the midterm, then
+i can take the midterm next week like everyone else.
+if however you are grading other's today, then please count this
+as my midterm too and grade it.  i got all 5 APIs coded and tested
+so i am very comfortable with this submission
+thank you for the choice
+either response is fine
+*/
+
+
+//GitHub Repository
+https://github.com/danjokeny/PracticeExam
+
