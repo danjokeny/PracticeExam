@@ -2,29 +2,34 @@
 //Daniel Forero
 //BusAdm 810 web app dev
 
-SETUP process
+//SETUP process
 
-performed npm init
+//performed npm init
 
-installed:
-1. express
-2. nodemon
-3.morgan
-4. winston
-5. grunt
-6. grunt-cli
-7. grunt-contrib-nodemon
-8. express-async-handler"
-9.. body-parser
+//installed:
+//1. express
+//2. nodemon
+//3.morgan
+//4. winston
+//5. grunt
+//6. grunt-cli
+//7. grunt-contrib-nodemon
+//8. express-async-handler"
+//9.. body-parser
 
-Logic processing
+//Logic processing
 
-got gruntgile working
-got index.js working
-got config, express, and logger .js files working
+//got gruntgile working
+//got index.js working
+//got config, express, and logger .js files working
 
-setup database model
+//setup database model
 
-got POST working
-got GET ALL working
-got GET specific TODO id working
+//Async Routes
+//got POST working
+//got GET ALL working
+//got GET specific TODO id working
+//got PUT update specific id working
+//got DELETE working
+
+//EXAM DONE!
