@@ -45,7 +45,7 @@ module.exports = function (app, config) {
     }));
 
     //Get specific todo  id Request 
-    //Sample: http://localhost:5000/api/todos/5bd7af2e0ba51068bc63f58f
+    //Sample: http://localhost:3300/api/todos/5bd7af2e0ba51068bc63f58f
     router.get('/todos/:id', asyncHandler(async (req, res) => {
         logger.log('info', 'Get specific todo by id =  %s', req.params.id);
         await Todo.findById(req.params.id).then(result => {
@@ -55,11 +55,11 @@ module.exports = function (app, config) {
     }));
 
     //Update existing data row with json passed in raw body
-    //Sample:http://localhost:5000/api/todos/
+    //Sample:http://localhost:3300/api/todos/
     /*
 {
     "_id": "5bd7af2e0ba51068bc63f58f",
-    "Todo": "need a drinknow",
+    "Todo": "rock the exam",
     "Priority": "High",
 }
     */
@@ -71,5 +71,16 @@ module.exports = function (app, config) {
                 res.status(200).json(result);
             })
         }));
+
+    //Delete existing Todo
+    //Sample:http://localhost:3300/api/Todo/5bd7ae5d76938a5cf02f2272
+    router.delete('/todos/:id', asyncHandler(async (req, res) => {
+        logger.log('info', 'Deleting todo id =  %s', req.params.id);
+        await Todo.remove({ _id: req.params.id })
+                .then(result => {
+                        logger.log('info', 'Delete Todo = ' + req.params.id);
+                        res.status(200).json(result);
+        })
+    }));
 
 };
