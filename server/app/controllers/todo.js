@@ -54,4 +54,22 @@ module.exports = function (app, config) {
         })
     }));
 
+    //Update existing data row with json passed in raw body
+    //Sample:http://localhost:5000/api/todos/
+    /*
+{
+    "_id": "5bd7af2e0ba51068bc63f58f",
+    "Todo": "need a drinknow",
+    "Priority": "High",
+}
+    */
+    router.put('/todos', asyncHandler(async (req, res) => {
+        logger.log('info', 'Updating todo');
+        await Todo.findOneAndUpdate({ _id: req.body._id }, req.body, { new: true })
+            .then(result => {
+                logger.log('info', 'update Todo = ' + result);
+                res.status(200).json(result);
+            })
+        }));
+
 };

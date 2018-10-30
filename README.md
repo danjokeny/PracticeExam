@@ -2,7 +2,7 @@
 //Daniel Forero
 //BusAdm 810 web app dev
 
-SETUP
+SETUP process
 
 performed npm init
 
@@ -17,9 +17,14 @@ installed:
 8. express-async-handler"
 9.. body-parser
 
+Logic processing
+
 got gruntgile working
 got index.js working
 got config, express, and logger .js files working
 
+setup database model
+
 got POST working
 got GET ALL working
+got GET specific TODO id working
